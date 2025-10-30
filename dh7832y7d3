@@ -1,0 +1,447 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 23 | Scripts: 9 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Page1
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
+G2L["2"]["BorderSizePixel"] = 2;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 313, 0, 341);
+G2L["2"]["Position"] = UDim2.new(0.01651, 0, 0.24314, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["2"]["Name"] = [[Page1]];
+
+
+-- StarterGui.ScreenGui.Page1.Line
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Size"] = UDim2.new(0, 3, 0, 341);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[]];
+G2L["3"]["Name"] = [[Line]];
+G2L["3"]["Position"] = UDim2.new(0.49521, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Page1.Sky
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 2;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 80, 0, 50);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["4"]["Text"] = [[Sky]];
+G2L["4"]["Name"] = [[Sky]];
+
+
+-- StarterGui.ScreenGui.Page1.Sky.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.Decal
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 2;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 75, 0, 50);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["6"]["Text"] = [[Decal]];
+G2L["6"]["Name"] = [[Decal]];
+G2L["6"]["Position"] = UDim2.new(0.25559, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Page1.Decal.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.Theme
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 2;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 80, 0, 50);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["8"]["Text"] = [[Theme]];
+G2L["8"]["Name"] = [[Theme]];
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.18768, 0);
+
+
+-- StarterGui.ScreenGui.Page1.Theme.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.KickAll
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 2;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 75, 0, 50);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["a"]["Text"] = [[Kick All]];
+G2L["a"]["Name"] = [[KickAll]];
+G2L["a"]["Position"] = UDim2.new(0.25559, 0, 0.18768, 0);
+
+
+-- StarterGui.ScreenGui.Page1.KickAll.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.Jumpstyle
+G2L["c"] = Instance.new("TextButton", G2L["2"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 2;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 75, 0, 50);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["c"]["Text"] = [[Jumpstyle]];
+G2L["c"]["Name"] = [[Jumpstyle]];
+G2L["c"]["Position"] = UDim2.new(0.25559, 0, 0.37537, 0);
+
+
+-- StarterGui.ScreenGui.Page1.Jumpstyle.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.WontStopUs
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 2;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 80, 0, 50);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["e"]["Text"] = [[Won't Stop Us]];
+G2L["e"]["Name"] = [[WontStopUs]];
+G2L["e"]["Position"] = UDim2.new(0, 0, 0.37537, 0);
+
+
+-- StarterGui.ScreenGui.Page1.WontStopUs.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.Tools
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 2;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 80, 0, 50);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["10"]["Text"] = [[Tools]];
+G2L["10"]["Name"] = [[Tools]];
+G2L["10"]["Position"] = UDim2.new(0, 0, 0.56598, 0);
+
+
+-- StarterGui.ScreenGui.Page1.Tools.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.DiscoFog
+G2L["12"] = Instance.new("TextButton", G2L["2"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 2;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 75, 0, 50);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["12"]["Text"] = [[Disco Fog]];
+G2L["12"]["Name"] = [[DiscoFog]];
+G2L["12"]["Position"] = UDim2.new(0.25559, 0, 0.56598, 0);
+
+
+-- StarterGui.ScreenGui.Page1.DiscoFog.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.ScreenGui.Title
+G2L["14"] = Instance.new("TextLabel", G2L["1"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 2;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Size"] = UDim2.new(0, 313, 0, 50);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["14"]["Text"] = [[(v1) Team c00lkidd 5 - c00lgui @itzmikeyythedev]];
+G2L["14"]["Name"] = [[Title]];
+G2L["14"]["Position"] = UDim2.new(0.01651, 0, 0.15811, 0);
+
+
+-- StarterGui.ScreenGui.INJFrame
+G2L["15"] = Instance.new("Frame", G2L["1"]);
+G2L["15"]["BorderSizePixel"] = 2;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Size"] = UDim2.new(0, 313, 0, 341);
+G2L["15"]["Position"] = UDim2.new(0.01651, 0, 0.24463, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["15"]["Name"] = [[INJFrame]];
+
+
+-- StarterGui.ScreenGui.INJFrame.DiscoFog
+G2L["16"] = Instance.new("TextButton", G2L["15"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 2;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 206, 0, 50);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["16"]["Text"] = [[Inject]];
+G2L["16"]["Name"] = [[DiscoFog]];
+G2L["16"]["Position"] = UDim2.new(0.16933, 0, 0.42522, 0);
+
+
+-- StarterGui.ScreenGui.INJFrame.DiscoFog.LocalScript
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.Page1.Sky.LocalScript
+local function C_5()
+local script = G2L["5"];
+	function click()
+		s = Instance.new("Sky")
+		s.Name = "Sky"
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=158118263"
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end;
+task.spawn(C_5);
+-- StarterGui.ScreenGui.Page1.Decal.LocalScript
+local function C_7()
+local script = G2L["7"];
+	function click()
+		function exPro(root)
+			for _, v in pairs(root:GetChildren()) do
+				if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=158118263" then
+					v.Parent = nil
+				elseif v:IsA("BasePart") then
+					v.Material = "Plastic"
+					v.Transparency = 0
+					local One = Instance.new("Decal", v)
+					local Two = Instance.new("Decal", v)
+					local Three = Instance.new("Decal", v)
+					local Four = Instance.new("Decal", v)
+					local Five = Instance.new("Decal", v)
+					local Six = Instance.new("Decal", v)
+					One.Texture = "http://www.roblox.com/asset/?id=158118263"
+					Two.Texture = "http://www.roblox.com/asset/?id=158118263"
+					Three.Texture = "http://www.roblox.com/asset/?id=158118263"
+					Four.Texture = "http://www.roblox.com/asset/?id=158118263"
+					Five.Texture = "http://www.roblox.com/asset/?id=158118263"
+					Six.Texture = "http://www.roblox.com/asset/?id=158118263"
+					One.Face = "Front"
+					Two.Face = "Back"
+					Three.Face = "Right"
+					Four.Face = "Left"
+					Five.Face = "Top"
+					Six.Face = "Bottom"
+				end
+				exPro(v)
+			end
+		end
+		function asdf(root)
+			for _, v in pairs(root:GetChildren()) do
+				asdf(v)
+			end
+		end
+		exPro(game.Workspace)
+		asdf(game.Workspace)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end;
+task.spawn(C_7);
+-- StarterGui.ScreenGui.Page1.Theme.LocalScript
+local function C_9()
+local script = G2L["9"];
+	function onClick()
+		local Music = Instance.new("Sound")
+		Music.Parent		= game:GetService("Workspace")
+		Music.SoundId		= "rbxassetid://71956674693421"
+		Music.Playing		= true
+		Music.Looped		= true
+		Music.Pitch			= 1.3
+		Music.Volume		= 10
+	
+	end
+	
+	script.Parent.MouseButton1Down:connect(onClick)
+end;
+task.spawn(C_9);
+-- StarterGui.ScreenGui.Page1.KickAll.LocalScript
+local function C_b()
+local script = G2L["b"];
+	script.Parent.MouseButton1Down:connect(function()
+		for i, players in pairs(game.Players:GetChildren()) do
+			players:Kick("Team c00lkidd 5 was here!")
+		end
+	end)
+	
+end;
+task.spawn(C_b);
+-- StarterGui.ScreenGui.Page1.Jumpstyle.LocalScript
+local function C_d()
+local script = G2L["d"];
+	function onClick()
+		local Music = Instance.new("Sound")
+		Music.Parent		= game:GetService("Workspace")
+		Music.SoundId		= "rbxassetid://1839246711"
+		Music.Playing		= true
+		Music.Looped		= true
+		Music.Pitch			= 0.75
+		Music.Volume		= 10
+	
+	end
+	
+	script.Parent.MouseButton1Down:connect(onClick)
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.Page1.WontStopUs.LocalScript
+local function C_f()
+local script = G2L["f"];
+	function onClick()
+		local Music = Instance.new("Sound")
+		Music.Parent		= game:GetService("Workspace")
+		Music.SoundId		= "rbxassetid://1847661821"
+		Music.Playing		= true
+		Music.Looped		= true
+		Music.Pitch			= 1
+		Music.Volume		= 10
+	
+	end
+	
+	script.Parent.MouseButton1Down:connect(onClick)
+end;
+task.spawn(C_f);
+-- StarterGui.ScreenGui.Page1.Tools.LocalScript
+local function C_11()
+local script = G2L["11"];
+	function click()
+		while wait() do
+			local team1 = Instance.new("Tool", game:GetService("StarterPack"))
+			team1.Name = "CK5"
+			game:service'Debris':AddItem(team1,0.3)
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				local team1 = Instance.new("Tool", v.Backpack)
+				team1.Name = "CK5"
+				team1.TextureId = "http://www.roblox.com/asset/?id=158118263"
+				game:service'Debris':AddItem(team1,0.3)
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.Page1.DiscoFog.LocalScript
+local function C_13()
+local script = G2L["13"];
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification", {
+			Title = "Disco Fog";
+			Text = "Version 3, it is currently BROKEN.";
+			Duration = 5;
+		})
+	end)
+	
+end;
+task.spawn(C_13);
+-- StarterGui.ScreenGui.INJFrame.DiscoFog.LocalScript
+local function C_17()
+local script = G2L["17"];
+	local button = script.Parent
+	local StarterGui = game:GetService("StarterGui")
+	
+	button.MouseButton1Click:Connect(function()
+		task.wait(4)
+		local parentGui = button:FindFirstAncestorWhichIsA("ScreenGui")
+		if parentGui then
+			local injFrame = parentGui:FindFirstChild("INJFrame")
+			local page1 = parentGui:FindFirstChild("Page1")
+			if injFrame then
+				injFrame.Visible = false
+			end
+			if page1 then
+				page1.Visible = true
+			end
+		end
+		StarterGui:SetCore("SendNotification", {
+			Title = "Team c00lkidd 5";
+			Text = "Succesfully Injected!";
+			Duration = 3;
+		})
+	end)
+	
+end;
+task.spawn(C_17);
+
+return G2L["1"], require;
